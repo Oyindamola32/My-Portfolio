@@ -43,7 +43,7 @@
           </p>
           <div class="btn-con">
             <a href="tel:08132124732" class="main-btn">
-              <span class="btn-text">Contact me</span>
+              <span class="btn-text">Contact Me</span>
             </a>
           </div>
         </div>
@@ -521,7 +521,13 @@
               </div>
             </div>
             <div class="right-contact"><br><br><br>
-              <form action="connect.php" method="post" class="contact-form">
+              <form name="send message" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="contact-form">
+               <p hidden aria-hidden="true"> 
+                <label>Don't fill out this input..<br> <input name="bot-field"/>
+                </label>
+                </p>
+               
+               
                 <div class="input-control i-c-2">
                   <input type="text"  id="name" name="firstname" placeholder="First Name" required/>
                   <input type="text"  id="name" name="lastname" placeholder="Last Name" required/>
@@ -538,7 +544,7 @@
                   <br><br>
                 
 
-                  <input type="submit" value="SEND MESSAGE">
+                  <button type="submit">SEND MESSAGE</button>
               </form>
             </div>
           </div>
