@@ -654,6 +654,21 @@ section {
   }
 }
 
+button {
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  background-color: var(--color-secondary);
+  margin: auto !important;
+  margin-top: -15px !important;
+  border-radius: 10px !important;
+  padding: 15px 25px 15px 25px !important;
+  text-align: center !important;
+  cursor: pointer;
+}
+
 /*independed components*/
 .btn-con {
   display: flex;
@@ -671,6 +686,10 @@ section {
   display: flex;
   align-items: center;
   overflow: hidden;
+  border-radius: 59;
+  padding: 19px 32px 19px 32px;
+  display: inline-block;
+  letter-spacing: 1px;
   .btn-text {
     padding: 0 2rem;
   }

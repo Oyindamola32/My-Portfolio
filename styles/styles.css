@@ -99,16 +99,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
   animation: scaleAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0%) scaleY(1);
-  }
 }
 @keyframes scaleAnim {
   0% {
@@ -201,7 +192,7 @@ section {
   top: 0;
   z-index: -1;
   -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-  clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -215,7 +206,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
@@ -351,13 +342,13 @@ section {
   width: 80%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .php {
-  width: 90%;
+  width: 85%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .sql {
+.about-stats .progress-bars .progress-bar .progress-con .progress .mysql {
   width: 85%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .wordpress {
-  width: 80%;
+  width: 75%;
 }
 
 .stat-title {
@@ -448,7 +439,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -537,7 +528,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   filter: grayscale(100%);
@@ -658,6 +649,21 @@ section {
   justify-content: flex-start;
 }
 
+button {
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  background-color: var(--color-secondary);
+  margin: auto !important;
+  margin-top: -15px !important;
+  border-radius: 10px !important;
+  padding: 15px 25px 15px 25px !important;
+  text-align: center !important;
+  cursor: pointer;
+}
+
 /*independed components*/
 .btn-con {
   display: flex;
@@ -665,8 +671,8 @@ section {
 }
 
 .main-btn {
+  border-radius: 30px;
   color: inherit;
-  border-radius: 50px;
   font-weight: 600;
   position: relative;
   border: 1px solid var(--color-secondary);
@@ -675,9 +681,10 @@ section {
   display: flex;
   align-items: center;
   overflow: hidden;
-  letter-spacing: 0px;
+  border-radius: 59;
   padding: 19px 32px 19px 32px;
-  line-height: 20px;
+  display: inline-block;
+  letter-spacing: 1px;
 }
 .main-btn .btn-text {
   padding: 0 2rem;
@@ -893,4 +900,4 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
