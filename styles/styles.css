@@ -758,11 +758,11 @@ button {
   }
   .portfolios {
     grid-template-columns: 1fr !important;
-    padding-bottom: 6rem;
+    padding-bottom: 6rem !important;
   }
   .blogs {
     grid-template-columns: 1fr !important;
-    padding-bottom: 6rem;
+    padding-bottom: 6rem !important;
   }
   .contact-content-con {
     flex-direction: column;
