@@ -33,6 +33,11 @@
       margin-left: 0;
       margin-top: 2.5rem;
     }
+    .left-contact {
+      position: relative;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+    }
   }
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
@@ -75,11 +80,11 @@
     }
   }
   .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
+    margin-left: 0 !important;
+    margin-top: 1.5rem !important;
   }
 }
 
