@@ -27,6 +27,13 @@
     padding-bottom: 6rem !important;
   }
 
+  .contact-info {
+    flex: 2;
+    justify-content: none;
+    align-items: center;
+    display: grid;
+  }
+
   .contact-content-con {
     flex-direction: column;
     .right-contact {

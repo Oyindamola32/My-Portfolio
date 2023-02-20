@@ -662,6 +662,7 @@ button {
   padding: 15px 25px 15px 25px !important;
   text-align: center !important;
   cursor: pointer;
+  flex: 2;
 }
 
 /*independed components*/
@@ -763,6 +764,12 @@ button {
   .blogs {
     grid-template-columns: 1fr !important;
     padding-bottom: 6rem !important;
+  }
+  .contact-info {
+    flex: 2;
+    justify-content: none;
+    align-items: center;
+    display: grid;
   }
   .contact-content-con {
     flex-direction: column;
